@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 字体大小分组 -->
+    <group
+        android:id="@+id/group_font_size"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_size_small"
+            android:title="小 (10sp)"
+            android:checkable="true"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/action_size_medium"
+            android:title="中 (16sp)"
+            android:checkable="true"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/action_size_large"
+            android:title="大 (20sp)"
+            android:checkable="true"
+            app:showAsAction="never"/>
+    </group>
+
+    <!-- 普通菜单项 -->
+    <item
+        android:id="@+id/action_normal_item"
+        android:title="普通菜单项"
+        android:checkable="false"
+        app:showAsAction="never" />
+
+    <!-- 字体颜色分组 -->
+    <group
+        android:id="@+id/group_font_color"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_color_red"
+            android:title="字体颜色：红"
+            android:checkable="true"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/action_color_black"
+            android:title="字体颜色：黑"
+            android:checkable="true"
+            app:showAsAction="never"/>
+    </group>
+
+</menu>

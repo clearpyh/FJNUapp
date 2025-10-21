@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- 输入栏 -->
+    <EditText
+        android:id="@+id/editTextInput"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="#D7D7B7"
+        android:gravity="end|center_vertical"
+        android:hint="Input"
+        android:text="0.0"
+        android:textSize="24sp"
+        android:inputType="none"
+        android:focusable="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"/>
+
+    <!-- 数字和运算按钮 -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:columnCount="4"
+        android:rowCount="4"
+        android:alignmentMode="alignMargins"
+        android:useDefaultMargins="true"
+        app:layout_constraintTop_toBottomOf="@id/editTextInput"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- 第一行 -->
+        <Button android:text="7" />
+        <Button android:text="8" />
+        <Button android:text="9" />
+        <Button android:text="×" />
+
+        <!-- 第二行 -->
+        <Button android:text="4" />
+        <Button android:text="5" />
+        <Button android:text="6" />
+        <Button android:text="-" />
+
+        <!-- 第三行 -->
+        <Button android:text="1" />
+        <Button android:text="2" />
+        <Button android:text="3" />
+        <Button android:text="+" />
+
+        <!-- 第四行 -->
+        <Button android:text="." />
+        <Button android:text="0" />
+        <Button android:text="=" />
+        <Button android:text="÷" />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
